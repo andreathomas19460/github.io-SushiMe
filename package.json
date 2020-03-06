@@ -1,0 +1,22 @@
+{
+  "name": "github.io-sushime",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/andreathomas19460/github.io-SushiMe.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/andreathomas19460/github.io-SushiMe/issues"
+  },
+  "homepage": "https://github.com/andreathomas19460/github.io-SushiMe#readme",
+  "dependencies": {
+    "sequelize": "^5.21.5"
+  }
+}

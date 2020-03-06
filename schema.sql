@@ -1,0 +1,3 @@
+DROP DATABASE IF EXISTS sushidb;
+
+CREATE DATABASE sushidb;
