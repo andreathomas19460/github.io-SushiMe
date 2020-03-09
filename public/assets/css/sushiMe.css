@@ -1,0 +1,16 @@
+body {
+    background-image: url("../images/irongrip_@2X.png"); 
+    background-position: cover;
+    }
+
+h1 {
+    font-weight: bold;
+    color:white; 
+    background-color: transparent;
+    border:none;
+    font-size:150px
+}
+
+span {
+    color: red;
+}
