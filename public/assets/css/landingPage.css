@@ -1,0 +1,21 @@
+body {
+    background-image: url("../images/person.png"); 
+    background-repeat: no-repeat; 
+    background-position:center center;
+    min-height: calc(100vh - 30px)
+}
+
+a {
+    font-weight: bold;
+    color:white; 
+    font-size:200px
+}
+
+button{
+    background-color: transparent;
+    border:none
+}
+
+span {
+    color: red;
+}

@@ -5,22 +5,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Restaurants</title>
-    
-  
+    <link rel="stylesheet" href="assets/css/app.css">
+    <link rel="stylesheet" href="assets/css/map.css">
   </head>
   <body>
-    
-
-      <br>
-      <br>
   
-      <div id= "header" class="paper container">
-      <h1 class="centerText" id="mapHeader">Sushi Restaurants Near You!</h1>
+      <div>
+      <h1>Sushi Restaurants Near You!</h1>
       </div>
       
       <br>
 
-      <div class="paper container" style="display: flex; flex-direction: column">
+      <div class="container" style="display: flex; flex-direction: column">
         <div class="row">
           <div id="map"></div>
         </div>
@@ -41,11 +37,11 @@
        </div>
       </div>
 
-      <script src="mapJS.js"></script>
+      <script src="assets/js/mapJS.js.js"></script>
       <script
         async
         defer
-        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBh7up_rfs0tnAS9Lz3GzRHwO7v4OkxQCc&callback=initMap&libraries=places"
+        src="https://maps.googleapis.com/maps/api/js?key=&callback=initMap&libraries=places"
       ></script>
 </body>
 </html>
