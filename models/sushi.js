@@ -2,11 +2,22 @@
 
 module.exports = function(sequelize, DataTypes) {
   const Sushi = sequelize.define(`Sushi`, {
-    sushi_name: DataTypes.STRING,
-    sushi_name_ja: DataTypes.STRING
+    // freezeTableName: true,
+    name: {
+        type: DataTypes.STRING,
+        allowNull: false,
+        validate: {
+            len: [1, 140]
+        }
+    },
+    name_ja: {
+        type: DataTypes.STRING,
+        allowNull: false,
+        validate: {
+            len: [1, 140]
+        }
+    }
   });
 
   return Sushi;
 };
-
-
