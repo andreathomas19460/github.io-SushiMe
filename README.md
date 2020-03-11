@@ -2,7 +2,7 @@
 
 ## User Story
 
-As an English speaker who is interested in Japanese food, I would like to become acquainted with common sushi ingredients, learn the Japanese translatonis for those sushi ingredients, and find a nearby sushi restaurant so that I can order sushi in Japanese.
+As an English speaker who is interested in Japanese food, I would like to become acquainted with common sushi ingredients, learn the Japanese translations for those sushi ingredients, and find a nearby sushi restaurant so that I can order sushi in Japanese.
 
 ## Screenshot
 
@@ -42,14 +42,14 @@ The webpage is comprised of:
 
 ## Deployment
 
-Webpage can be found via GirHub at this link: 
+Webpage can be found via GirHub at this link: https://andreathomas19460.github.io/github.io-SushiMe/
 
-OR via Heroku at this link:
+OR via Heroku at this link: 
 
 1. The landing page: the user is greeted and formally invited to enter the application; user clicks enter button (linked to home page)
 2. The Home page: delivers description of the application and how to use with link to dynamic pages (Maps and SushiME)
 3. The navbar: user can choose to navigate to home page, SushiME page, sushi restaurant map page
-4. The SushiME page:
+4. The SushiME page: user can select a flashcard with sushi ingredient image and name in English to reveal name in Japanese
 5. The Maps page: user calls on Google Maps to search for the nearest sushi restaurants to their relative location; restaurant hours displayed when restaurant selected
 
 
