@@ -6,5 +6,22 @@ module.exports = app =>{
             dbSushi =>{
                 res.json(dbSushi);
             });
+    });
+    app.post('/api/sushi', (req, res) => {
+        db.Sushi.create({
+            name: req.body.name,
+            name_ja: req.body.name_ja
+        }).then(dbSushi => {
+            res.json(dbSushi)
+        });
+    });
+    app.put('/api/sushi/:id', (req,res)=>{
+        db.Sushi.destroy({
+            where:{
+                id:req.params.id
+            }
+        }).then(dbSushi =>{
+            res.json(dbSushi);
+        })
     })
 }
