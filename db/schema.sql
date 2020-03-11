@@ -7,6 +7,7 @@ CREATE TABLE sushi (
     id int NOT NULL AUTO_INCREMENT,
     sushi_name VARCHAR (255) NOT NULL,
     sushi_jap VARCHAR (255) NOT NULL,
+    image blob NOT NULL,
     PRIMARY KEY (id)
 );
 

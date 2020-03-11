@@ -1,6 +1,4 @@
-      // var mapElement = document.getElementById('map');
-      // mapElement.style = null;
-      var map, infoWindow, infoWindowTwo;
+var map, infoWindow, infoWindowTwo;
       function initMap() {
         map = new google.maps.Map(document.getElementById("map"), {
           center: { lat: 27.9881, lng: 86.925 },
@@ -18,7 +16,7 @@
               infoWindow.open(map);
               map.setCenter(pos);
 
-      //comic store search
+      //sushi restaurant search
       var request = {
         location: pos,
         radius: 8047,
@@ -59,7 +57,7 @@
           infoWindowTwo.setContent(place.name);
           infoWindowTwo.open(map, this);
           console.log(place);
-          $("#container").html("Store: " + place.name);
+          $("#container").html("Restaurant: " + place.name);
           $("#container2").html("Location: " +place.formatted_address);
           if (place.opening_hours.open_now === true){$("#container3").html("This restaurant is open!")
         } else {

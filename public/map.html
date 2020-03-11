@@ -4,19 +4,20 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Restaurants</title>
-    <link rel="stylesheet" href="assets/css/app.css">
-    <link rel="stylesheet" href="assets/css/map.css">
+    <title>Sushi Restaurants</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="assets/css/map.css" />
+  
   </head>
   <body>
   
-      <div>
-      <h1>Sushi Restaurants Near You!</h1>
+      <div id= "header" class="container">
+      <h1 class="centerText" id="mapHeader">Local Sushi Restaurants</h1>
       </div>
       
       <br>
 
-      <div class="container" style="display: flex; flex-direction: column">
+      <div class="paper container" style="display: flex; flex-direction: column">
         <div class="row">
           <div id="map"></div>
         </div>
@@ -37,11 +38,11 @@
        </div>
       </div>
 
-      <script src="assets/js/mapJS.js.js"></script>
+      <script src="assets/js/mapJS.js"></script>
       <script
         async
         defer
-        src="https://maps.googleapis.com/maps/api/js?key=&callback=initMap&libraries=places"
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAGycBpuUNnuKlGO1LZpK0y5OznWdv8Qt4&callback=initMap&libraries=places"
       ></script>
 </body>
 </html>
