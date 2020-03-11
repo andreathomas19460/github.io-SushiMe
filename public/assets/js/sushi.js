@@ -11,3 +11,7 @@ function allowDrop(ev) {
     var data = ev.dataTransfer.getData("text");
     ev.target.appendChild(document.getElementById(data));
   }
+
+function clearCont(){
+    document.getElementById("sushiPlate").innerHTML= "";
+}
