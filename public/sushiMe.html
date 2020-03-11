@@ -2,31 +2,80 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Sushi Me</title>
-    <link rel="stylesheet" href="../public/assets/css/Foundation-6.6.1-CSS-project/assets/css/app.css">
-    <link rel="stylesheet" href="assets/css/sushiMe.css">
+    <link
+      rel="stylesheet"
+      href="../public/assets/css/Foundation-6.6.1-CSS-project/assets/css/app.css"
+    />
+    <link rel="stylesheet" href="assets/css/sushiMe.css" />
   </head>
-  
+
   <body>
-    <div>
-      <h1 class="text-center">Sushi<span>Me</span></h1>
-    </div>
-    <div class="wrapper">
-      <div class="grid-block medium-push-1 img-container"><img src="./assets/images/mochaGrunge_@2X.png" alt="empty recatangular plate"/><img src="./assets/images/sushiChopsticks.png" alt="chopsticks"/></div>
-      <div class="grid-block align-middle medium-pull-1 card-container">
-          <div class="card-section" ondrop="drop(event)" ondragover="allowDrop(event)">       
+    <ul class="dropdown menu" data-dropdown-menu>
+      <li><a href="#">SushiME</a></li>
+      <li><a href="map.html">Maps</a></li>
+      <li><a href="home.html">Home</a></li>
+    </ul>
+
+    <h1 class="text-center">Sushi<span>Me</span></h1>
+
+    <div class="grid-container">
+      <div class="grid-y grid-margin-y" style="height: 800px">
+        <div class="cell small-8 medium-6 large-2">
+          <p class="text-center">
+            Translate sushi ingredients from English to Japanese!
+          </p>
+          <p class="text-center">
+            Simply click on a card and drag it onto the gray sushi plate.
+          </p>
+        </div>
+        <div class="cell small-6 medium-8 large-2">
+        ...
+        </div>
+        <div class="cell small-6 medium-4 large-10" style="background-color: black;">
+          <div class="grid-block medium-push-1 img-container">
+            <img
+              src="./assets/images/mochaGrunge_@2X.png"
+              alt="empty recatangular plate"/>
+            <img class="image-center" style= "height: 500px; width: auto; background-color: transparent;" src="./assets/images/sushiChopsticks.png" alt="chopsticks" />
+          </div>
         </div>
       </div>
     </div>
 
-    <div>
-      <img id="drag1" src="./assets/images/sushi3.jpg" draggable="true" ondragstart="drag(event)" width="100" height="69">
-      <img id="drag2" src="./assets/images/sushi3.jpg" draggable="true" ondragstart="drag(event)" width="100" height="69">
+    <div class="wrapper">
+      </div>
+      <div class="grid-block align-middle medium-pull-1 card-container">
+        <div
+          class="card-section"
+          ondrop="drop(event)"
+          ondragover="allowDrop(event)"
+        ></div>
+      </div>
     </div>
-  
-    <script src = "assets/js/sushi.js"></script>
+
+    <div>
+      <img
+        id="drag1"
+        src="./assets/images/sushi3.jpg"
+        draggable="true"
+        ondragstart="drag(event)"
+        width="100"
+        height="69"
+      />
+      <img
+        id="drag2"
+        src="./assets/images/sushi3.jpg"
+        draggable="true"
+        ondragstart="drag(event)"
+        width="100"
+        height="69"
+      />
+    </div>
+
+    <script src="assets/js/sushi.js"></script>
     <script src="assets/js/app.js"></script>
   </body>
 </html>
