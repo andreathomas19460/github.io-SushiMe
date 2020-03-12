@@ -55,7 +55,6 @@ OR via Heroku at this link:
 
 ## Technologies Used
 
-* Font Awesome
 * Microsoft Text to Translate
 * Google Maps API
 * Handlebars
@@ -63,6 +62,8 @@ OR via Heroku at this link:
 * Node and Express
 * MySQL
 * Heroku
+* Fireship's Responsive Navbar: https://github.com/fireship-io/222-responsive-icon-nav-css/blob/master/public/index.html
+* Font Awesome (license @ https://fontawesome.com/license; icons are unaltered)
 
 ## Status
 

@@ -1,22 +1,32 @@
-body {
-    background-image: url("../images/asia-japan-japanese-japanese-culture-590478.png"); 
-    background-repeat: no-repeat; 
-    background-position:center center;
-    min-height: calc(100vh - 30px)
-}
-
 .centerText {
     text-align: center;
 }
 
-#mapHeader{
-    margin: 1rem;
+h1 {
+    color: white;
+    font-weight: bold;
+    font-size: 80px;
 }
-html, body{
+
+
+body
+{
+  padding: 10px;
+  background-color: #fcfcfc;  
+}
+.center-div
+{
+  margin: 0 auto;
+  max-width: 500px;
+  height: 700px;
+  background-color: #ccc;
+  border-radius: 3px;
+}
+/* html, body{
     height: 100%;
     margin: 0;
     padding: 0;
-}
+} */
 
 #map {
     height: 500px;
