@@ -1,23 +1,24 @@
-body {
-    background-image: url("../images/irongrip_@2X.png"); 
-    background-position: cover;
-    }
-
-h1 {
-    font-weight: bold;
-    color:white; 
-    background-color: transparent;
-    border:none;
-    font-size:150px
+.center-div
+{
+  margin: 0 auto;
+  max-width: 1100px;
+  height: 500px;
+  background-color: black;
+  border-radius: 3px;
 }
 
-span {
-    color: red;
+#sushiPlate
+{
+  margin-left: 30px;
+  padding-top: 50px;
 }
 
-p {
-    color: white;
-    font-weight: bold;
-    font-size: 20px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-}
+#chopsticksIMG 
+{
+  height: 350px;
+  width: auto; 
+  background-color: transparent;
+  position:fixed;
+} 
+
+    
