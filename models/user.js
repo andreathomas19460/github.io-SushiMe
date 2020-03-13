@@ -3,6 +3,13 @@
 module.exports = function (sequelize, DataTypes) {
 const User = sequelize.define(`user`, {
     // freezeTableName: true,
+    username: {
+        type: DataTypes.STRING,
+        allowNull: false,
+        validate: {
+            len: [1, 140]
+        }
+    },
     name: {
         type: DataTypes.STRING,
         allowNull: false,
@@ -10,11 +17,13 @@ const User = sequelize.define(`user`, {
             len: [1, 140]
         }
     },
-    nameJa: {
+    email: {
         type: DataTypes.STRING,
-        allowNull: false,
+        allownNull: false,
         validate: {
-            len: [1, 140]
+            isEmail: {
+                msg: `Must be a valid email address`
+            }
         }
     }
 });
