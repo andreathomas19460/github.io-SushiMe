@@ -1,5 +1,5 @@
 body {
-    background-image: url("../images/person.png"); 
+    background-image: url("../images/landing.png"); 
     background-repeat: no-repeat; 
     background-position:center center;
     min-height: calc(100vh - 30px)
