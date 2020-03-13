@@ -6,15 +6,22 @@ body {
 }
 
 a {
+    text-decoration: none;
     font-weight: bold;
     color:white; 
-    font-size:200px
+    font-size:150px;
 }
-
-button{
-    background-color: transparent;
-    border:none;
-    
+div{
+    width: 100px;
+	height: 100px;
+	
+	position: absolute;
+	top:0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+  	
+	margin: auto;
 }
 
 span {

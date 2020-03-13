@@ -3,22 +3,15 @@
   margin: 0 auto;
   max-width: 1100px;
   height: 500px;
-  background-color: black;
+  background-color: #161612 ;
   border-radius: 3px;
-}
-
-#sushiPlate
-{
-  margin-left: 30px;
-  padding-top: 50px;
 }
 
 #chopsticksIMG 
 {
   height: 350px;
   width: auto; 
-  background-color: transparent;
-  position:fixed;
+  
 } 
 
 body {
@@ -38,6 +31,7 @@ h3 {
   font-weight: bold;
   font-size: 20px;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
+  text-align: center;
 }
 
 #sushiME {
@@ -278,3 +272,12 @@ border-radius: 3px;
 }
 
     
+#images{
+  text-align: center;
+  margin:50px;
+}
+
+img{
+  margin:10px;
+  border: solid white 1px;
+}

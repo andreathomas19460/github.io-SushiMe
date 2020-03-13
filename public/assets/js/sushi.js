@@ -19,7 +19,6 @@ function allowDrop(ev) {
     sushiPlate.push(JSON.stringify(sushi));
 
   }
-
 function clearCont(){
     document.getElementById("sushiPlate").innerHTML= "";
     sushiPlate = [];
@@ -43,5 +42,3 @@ saveButton.onclick(
   }
 
 )
-
-

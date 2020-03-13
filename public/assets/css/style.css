@@ -5,16 +5,8 @@ body {
     padding: 0;
 }
 
-
 ul {
     list-style-type: none;
-}
-
-h3 {
-    color: white;
-    font-weight: bold;
-    font-size: 20px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 #sushiME {
@@ -23,11 +15,27 @@ h3 {
     font-size: 80px;
 }
 
-p {
-    line-height: 2.5rem;
+p,li {
+    line-height: 2rem;
     padding: 10px;
     text-align: center;
+    font-family: Didot;
+    font-size: 20px;
+    font-weight: 600;
+    color: white;
 }
+
+li{
+  color: #E5F59D  ;
+  font-size: 25px;
+}
+
+#welcome{
+  font-size: 30px;
+  font-weight: 900;
+  color: white;
+}
+
 
 #ME {
     color: red;
@@ -248,8 +256,9 @@ main {
 .centered-div
 {
   margin: 0 auto;
-  max-width: 800px;
-  height: 600px;
-  background-color: lightgray;
+  width: 1200px;
+  height: 580px;
+  background-image: url("../images/asia-japan-japanese-japanese-culture-590478.png");
   border-radius: 3px;
+  margin-bottom: 10px;
 }
