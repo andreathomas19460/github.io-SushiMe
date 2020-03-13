@@ -1,22 +1,71 @@
 body {
-    background-image: url("../images/person.png"); 
+    background-image: url("../images/person1.png"); 
     background-repeat: no-repeat; 
     background-position:center center;
-    min-height: calc(100vh - 30px)
+    min-height: calc(100vh - 30px);
+    padding: 2vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+
 }
 
 a {
-    font-weight: bold;
-    color:white; 
-    font-size:200px
-}
+  font-size: calc(20px + 18vh);
+  line-height: calc(20px + 20vh);
+  text-shadow: 0 0 5px #ffa500, 0 0 15px #ffa500, 0 0 20px #ffa500, 0 0 40px #ffa500, 0 0 60px #ff0000, 0 0 10px #ff8d00, 0 0 98px #ff0000;
+  font-family: "Sacramento", cursive;
+  animation: blink 1s infinite;
+  -webkit-animation: blink 12s infinite;
+  text-decoration:none;
 
-button{
-    background-color: transparent;
-    border:none;
-    
 }
-
 span {
-    color: red;
+  color:#890604  ;
+}
+
+
+@-webkit-keyframes blink {
+  20%,
+  24%,
+  55% {
+    color: #111;
+    text-shadow: none;
+  }
+
+  0%,
+  19%,
+  21%,
+  23%,
+  25%,
+  54%,
+  56%,
+  100% {
+
+  text-shadow: 0 0 5px #ffa500, 0 0 15px #ffa500, 0 0 20px #ffa500, 0 0 40px #ffa500, 0 0 60px #ff0000, 0 0 10px #ff8d00, 0 0 98px #ff0000;
+    color: #fff6a9;
+  }
+}
+
+@keyframes blink {
+  20%,
+  24%,
+  55% {
+    color: #111;
+    text-shadow: none;
+  }
+
+  0%,
+  19%,
+  21%,
+  23%,
+  25%,
+  54%,
+  56%,
+  100% {
+
+  text-shadow: 0 0 5px #ffa500, 0 0 15px #ffa500, 0 0 20px #ffa500, 0 0 40px #ffa500, 0 0 60px #ff0000, 0 0 10px #ff8d00, 0 0 98px #ff0000;
+    color: #fff6a9;
+  }
 }

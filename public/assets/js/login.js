@@ -1,9 +1,9 @@
 const db = require (`./models`);
 
-const usernameContent = document.getElementById().textContent();
-const nameContent = document.getElementById().textContent();
-const emailContent = document.getElementById().textContent();
-const loginButton = document.getElementById();
+const usernameContent = document.getElementById('usernameContent').textContent();
+const nameContent = document.getElementById('nameContent').textContent();
+const emailContent = document.getElementById('emailContent').textContent();
+const loginButton = document.getElementById('loginButton');
 
 
 
@@ -19,8 +19,8 @@ loginButton.onclick(
     })
     .then(function(data){
       if (data) {
-        console.log('Data was pushed')
+        console.log(data)
       }
-      else  {console.log('u fucking suck')}
+      else  {console.log('error')}
     })
     });

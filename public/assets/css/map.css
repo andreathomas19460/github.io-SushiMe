@@ -11,15 +11,15 @@ h1 {
 .center-div
 {
   margin: 0 auto;
-  max-width: 500px;
-  height: 700px;
+  max-width: 800px;
+  height: 500px;
   background-color: #ccc;
   border-radius: 3px;
 }
 
 #map {
-    height: 500px;
-    width: 500px;
+    height: 100%;
+    width: 100%;
 }
 
 body {
@@ -45,6 +45,10 @@ h3 {
   color: white;
   font-weight: bold;
   font-size: 80px;
+}
+
+span{
+  color:red;
 }
 
 p {
