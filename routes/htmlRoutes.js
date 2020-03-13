@@ -1,5 +1,4 @@
-const db = require ('../models');
-
+const db = require (`../models`);
 module.exports = app =>{
     app.get ('/', function(req,res){
         res.render('index', {
@@ -13,7 +12,7 @@ module.exports = app =>{
     });
 
     app.get ('/sushiMe', function(req,res){
-        res.render('sushi', {
+        res.render('sushiMe', {
             style: 'sushiMe.css',
             
         })
@@ -24,5 +23,4 @@ module.exports = app =>{
             style: 'map.css'
         })
     });
-
 }

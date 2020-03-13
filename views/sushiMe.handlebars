@@ -1,20 +1,8 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta http-equiv="x-ua-compatible" content="ie=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Sushi Me</title>
-    <link
-      rel="stylesheet"
-      href="../public/assets/css/Foundation-6.6.1-CSS-project/assets/css/app.css"
-    />
-    <link rel="stylesheet" href="assets/css/style.css" />
-    <link rel="stylesheet" href="assets/css/sushiME.css" />
-  </head>
+<head>
+  <link rel="stylesheet" href="assets/css/sushiME.css">
+</head>
 
-  <body>
-    <nav class="navbar">
+<nav class="navbar">
       <ul class="navbar-nav">
         <li class="logo">
           <a href="#" class="nav-link">
@@ -46,7 +34,7 @@
         </li>
 
         <li class="nav-item">
-          <a href="home.html" class="nav-link">
+          <a href="/home" class="nav-link">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               aria-hidden="true"
@@ -67,7 +55,7 @@
         </li>
 
         <li class="nav-item">
-          <a href="sushiMe.html" class="nav-link">
+          <a href="/sushiMe" class="nav-link">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               aria-hidden="true"
@@ -88,7 +76,7 @@
         </li>
 
         <li class="nav-item">
-          <a href="map.html" class="nav-link">
+          <a href="/map" class="nav-link">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               aria-hidden="true"
@@ -220,6 +208,16 @@
           </div>
         </div>
     
+<div>
+    <ul>
+        {{#each Sushis}}
+        <li>
+        <p>{{this.name}}</p>
+        </li>
+        {{/each}}
+    </ul>
+</div>
+
         <div>
           <img
             id="drag1"
@@ -242,8 +240,3 @@
 
     
   </main>
-
-    <script src="assets/js/sushi.js"></script>
-    <script src="assets/js/app.js"></script>
-  </body>
-</html>

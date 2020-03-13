@@ -1,19 +1,7 @@
-<!DOCTYPE html>
-<html lang="en">
   <head>
-    <meta charset="utf-8" />
-    <meta http-equiv="x-ua-compatible" content="ie=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Sushi Me</title>
-    <link
-      rel="stylesheet"
-      href="../public/assets/css/Foundation-6.6.1-CSS-project/assets/css/app.css"
-    />
-    <link rel="stylesheet" href="assets/css/style.css" />
+     <link rel="stylesheet" href="assets/css/map.css">
   </head>
-
-  <body>
-    <nav class="navbar">
+  <nav class="navbar">
       <ul class="navbar-nav">
         <li class="logo">
           <a href="#" class="nav-link">
@@ -45,7 +33,7 @@
         </li>
 
         <li class="nav-item">
-          <a href="home.html" class="nav-link">
+          <a href="/home" class="nav-link">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               aria-hidden="true"
@@ -66,7 +54,7 @@
         </li>
 
         <li class="nav-item">
-          <a href="sushiMe.html" class="nav-link">
+          <a href="/sushiMe" class="nav-link">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               aria-hidden="true"
@@ -87,7 +75,7 @@
         </li>
 
         <li class="nav-item">
-          <a href="map.html" class="nav-link">
+          <a href="/map" class="nav-link">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               aria-hidden="true"
@@ -192,31 +180,23 @@
     </nav>
 
     <main>
-      <h1 class="text-center" id="sushiME">Sushi<span id="ME">ME</span></h1>
-      <div class="centered-div">
-        <br>
-      <p>
-        Welcome to SushiME where we help you with your sushi queries! </p>
-        <ul class="text-center">
-          <li>Planning a
-            trip to Japan?</li> 
-          <li>Business meeting at a Japanese restaurant?</li>
-          <li>Hot date?</li>
-          <li>Simply sushi-curious?</li>
-          </ul> 
-        <p> SushiME is here to help you
-        acquaint yourself with sushi and recognize ingredients in Japanese. With
-        a little flashcard practice, you'll be impressing people with your
-        verbal skills in no time!
-        <br>Save your cards by creating login credentials below!
-      
-      </p>
-    </div>
+      <div id= "header" class="container">
+        <h1 class="centerText" >Local Sushi Restaurants</h1>
+        </div>
+        <div class="center-div">
+            <div id="map"></div>
+        
+            <div class="row">
+              <div id="container"></div>
+            </div>
+            <div class="row">
+              <div id="container2"></div>
+            </div>
+            <div class="row">
+              <div id="container3"></div>
+            </div>
+            <div class="row">
+              <div id="container4"></div>
+            </div>
+              </div>
     </main>
-
-    
-
-    <script src="assets/js/sushi.js"></script>
-    <script src="assets/js/app.js"></script>
-  </body>
-</html>
