@@ -1,8 +1,7 @@
-`use strict`;
-const maxCharLength = 140;
+`use strict`
 
-module.exports = function(sequelize, DataTypes) {
-  const Sushi = sequelize.define(`Sushi`, {
+module.exports = function (sequelize, DataTypes) {
+const User = sequelize.define(`user`, {
     // freezeTableName: true,
     name: {
         type: DataTypes.STRING,
@@ -18,6 +17,6 @@ module.exports = function(sequelize, DataTypes) {
             len: [1, 140]
         }
     }
-  });
-  return Sushi;
-}
+});
+return User;         
+};
