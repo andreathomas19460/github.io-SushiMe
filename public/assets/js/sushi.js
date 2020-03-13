@@ -1,17 +1,21 @@
-function allowDrop(ev) {
-    ev.preventDefault();
-  }
+// drag and drop function
+// function allowDrop(ev) {
+//     ev.preventDefault();
+//   }
   
-  function drag(ev) {
-    ev.dataTransfer.setData("text", ev.target.id);
-  }
+//   function drag(ev) {
+//     ev.dataTransfer.setData("text", ev.target.id);
+//   }
   
-  function drop(ev) {
-    ev.preventDefault();
-    var data = ev.dataTransfer.getData("text");
-    ev.target.appendChild(document.getElementById(data));
-  }
+//   function drop(ev) {
+//     ev.preventDefault();
+//     var data = ev.dataTransfer.getData("text");
+//     ev.target.appendChild(document.getElementById(data));
+//   }
 
-function clearCont(){
-    document.getElementById("sushiPlate").innerHTML= "";
-}
+// function clearCont(){
+//     document.getElementById("sushiPlate").innerHTML= "";
+// }
+
+////////////////////////
+
