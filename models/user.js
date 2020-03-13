@@ -1,8 +1,7 @@
 `use strict`
 
 module.exports = function (sequelize, DataTypes) {
-const User = sequelize.define(`user`, {
-    // freezeTableName: true,
+const User = sequelize.define(`User`, {
     username: {
         type: DataTypes.STRING,
         allowNull: false,
