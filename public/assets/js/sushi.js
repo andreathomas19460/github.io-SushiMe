@@ -21,12 +21,16 @@ function allowDrop(ev) {
   }
 
 function clearCont(){
+
     document.getElementById("sushiPlate").innerHTML= "";
+    
     sushiPlate = [];
 }
 
 
 const saveButton = document.getElementById(`saveButton`);
+
+
 saveButton.onclick(
   function saver (){
     db.Post.create({
