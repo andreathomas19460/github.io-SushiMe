@@ -13,6 +13,7 @@ ul {
     color: white;
     font-weight: bold;
     font-size: 80px;
+    margin: 35px;
 }
 
 p,li {
@@ -256,9 +257,8 @@ main {
 .centered-div
 {
   margin: 0 auto;
-  width: 1200px;
-  height: 580px;
+  width: 1100px;
+  height: 550px;
   background-image: url("../images/asia-japan-japanese-japanese-culture-590478.png");
-  border-radius: 3px;
-  margin-bottom: 10px;
+  border-bottom: 50px;
 }

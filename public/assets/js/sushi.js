@@ -42,3 +42,10 @@ saveButton.onclick(
   }
 
 )
+
+
+function flip(){
+  $('.card').toggleClass('flipped');
+}
+
+
