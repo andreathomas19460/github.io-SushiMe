@@ -1,5 +1,3 @@
-const db = require(`./models`);
-
 var sushiPlate = new Array();
 
 
