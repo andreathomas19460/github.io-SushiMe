@@ -1,5 +1,4 @@
 var map, infoWindow, infoWindowTwo;
->>>>>>> master
       function initMap() {
         map = new google.maps.Map(document.getElementById("map"), {
           center: { lat: 27.9881, lng: 86.925 },
