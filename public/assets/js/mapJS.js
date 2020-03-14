@@ -1,4 +1,7 @@
-const map, infoWindow, infoWindowTwo;
+
+      // var mapElement = document.getElementById('map');
+      // mapElement.style = null;
+      var map, infoWindow, infoWindowTwo;
       function initMap() {
         map = new google.maps.Map(document.getElementById("map"), {
           center: { lat: 27.9881, lng: 86.925 },
@@ -9,7 +12,7 @@ const map, infoWindow, infoWindowTwo;
         if (navigator.geolocation) {
           navigator.geolocation.getCurrentPosition(
             function(position) {
-              const pos = {
+              var pos = {
                 lat: position.coords.latitude,
                 lng: position.coords.longitude
               };
@@ -17,13 +20,13 @@ const map, infoWindow, infoWindowTwo;
               map.setCenter(pos);
 
       //sushi restaurant search
-      const request = {
+      var request = {
         location: pos,
         radius: 8047,
         query:"sushi restaurant",
       };
       infoWindowTwo = new google.maps.InfoWindow();
-      const service = new google.maps.places.PlacesService(map);
+      var service = new google.maps.places.PlacesService(map);
       service.textSearch(request, callback);
 
             },
@@ -41,14 +44,14 @@ const map, infoWindow, infoWindowTwo;
       //callback function
       function callback(results, status) {
         if (status == google.maps.places.PlacesServiceStatus.OK)
-          for (const i = 0; i < results.length; i++) {
+          for (var i = 0; i < results.length; i++) {
             createMarker(results[i]);
           }
       }
       //create marker function
       function createMarker(place) {
-        const placeLoc = place.geometry.location;
-        const marker = new google.maps.Marker({
+        var placeLoc = place.geometry.location;
+        var marker = new google.maps.Marker({
           map: map,
           position: place.geometry.location
         });
@@ -57,11 +60,11 @@ const map, infoWindow, infoWindowTwo;
           infoWindowTwo.setContent(place.name);
           infoWindowTwo.open(map, this);
           console.log(place);
-          $("#container").html("Restaurant: " + place.name);
+          $("#container").html("Store: " + place.name);
           $("#container2").html("Location: " +place.formatted_address);
-          if (place.opening_hours.open_now === true){$("#container3").html("This restaurant is open!")
+          if (place.opening_hours.open_now === true){$("#container3").html("This store is open!")
         } else {
-          $("#container3").html("Sorry, this restaurant is closed.")
+          $("#container3").html("Sorry, this store is closed.")
         };
           // $("#container4").text("Store: " + JSON.stringify(place));
         })

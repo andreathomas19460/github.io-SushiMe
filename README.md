@@ -38,7 +38,7 @@ The webpage is comprised of:
 
 ## UML
 
-<img src = 'public/assets/images/uml.png' width = “200”>
+<img src = 'public/assets/images/t' width = “200”>
 
 ## Deployment
 
