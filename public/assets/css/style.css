@@ -262,3 +262,17 @@ main {
   background-image: url("../images/asia-japan-japanese-japanese-culture-590478.png");
   border-bottom: 50px;
 }
+
+.container{
+  text-align: center;
+  margin:30px;
+}
+
+input{
+  height: 28px;
+  width: 180px;
+}
+
+label{
+  color: white;
+}
