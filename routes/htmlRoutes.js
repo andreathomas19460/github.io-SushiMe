@@ -1,6 +1,16 @@
 const db = require (`../models`);
 module.exports = app =>{
     app.get ('/', function(req,res){
+
+const db = require(`../models`);
+const YAML = require('yaml');
+const fs = require('fs');
+
+const file = fs.readFileSync(__dirname+"/../public/assets/sushi.yaml", 'utf8')
+const sushiList = YAML.parse(file)
+
+module.exports = app => {
+    app.get('/', function (req, res) {
         res.render('index', {
             style: 'landingPage.css'
         })
