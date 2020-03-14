@@ -1,4 +1,4 @@
-var map, infoWindow, infoWindowTwo;
+const map, infoWindow, infoWindowTwo;
       function initMap() {
         map = new google.maps.Map(document.getElementById("map"), {
           center: { lat: 27.9881, lng: 86.925 },
@@ -9,7 +9,7 @@ var map, infoWindow, infoWindowTwo;
         if (navigator.geolocation) {
           navigator.geolocation.getCurrentPosition(
             function(position) {
-              var pos = {
+              const pos = {
                 lat: position.coords.latitude,
                 lng: position.coords.longitude
               };
@@ -17,13 +17,13 @@ var map, infoWindow, infoWindowTwo;
               map.setCenter(pos);
 
       //sushi restaurant search
-      var request = {
+      const request = {
         location: pos,
         radius: 8047,
         query:"sushi restaurant",
       };
       infoWindowTwo = new google.maps.InfoWindow();
-      var service = new google.maps.places.PlacesService(map);
+      const service = new google.maps.places.PlacesService(map);
       service.textSearch(request, callback);
 
             },
@@ -41,14 +41,14 @@ var map, infoWindow, infoWindowTwo;
       //callback function
       function callback(results, status) {
         if (status == google.maps.places.PlacesServiceStatus.OK)
-          for (var i = 0; i < results.length; i++) {
+          for (const i = 0; i < results.length; i++) {
             createMarker(results[i]);
           }
       }
       //create marker function
       function createMarker(place) {
-        var placeLoc = place.geometry.location;
-        var marker = new google.maps.Marker({
+        const placeLoc = place.geometry.location;
+        const marker = new google.maps.Marker({
           map: map,
           position: place.geometry.location
         });

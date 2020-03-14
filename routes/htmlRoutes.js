@@ -47,3 +47,5 @@ module.exports = app => {
         })
     });
 }
+
+module.exports.sushiList = sushiList;
