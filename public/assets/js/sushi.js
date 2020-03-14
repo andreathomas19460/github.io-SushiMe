@@ -26,22 +26,15 @@ function drop(ev) {
 const saveButton = document.getElementById(`saveButton`);
 
 
-saveButton.onclick(
+saveButton.onclick =
   function saver() {
-    db.Post.create({
-      user: '1',
-      sushiArray: sushiPlate,
-
+    $.post('api/sushi',{userName:'teresa',name:'hello',email:'hello@gmail'},(data,status)=>{
+      if (data) {
+        console.log('Data was pushed')
+      }
+      else { console.log('u fucking suck') }  
     })
-      .then(function (data) {
-        if (data) {
-          console.log('Data was pushed')
-        }
-        else { console.log('u fucking suck') }
-      })
   }
-
-)
 
 //card flip function
 

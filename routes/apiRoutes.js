@@ -7,14 +7,14 @@ module.exports = app => {
                 res.json(dbSushi);
             });
     });
-    app.post('/api/sushi', (req, res) => {
-        db.Sushi.create({
-            name: req.body.name,
-            name_ja: req.body.name_ja
-        }).then(dbSushi => {
-            res.json(dbSushi)
-        });
-    });
+    // app.post('/api/sushi', (req, res) => {
+    //     db.Sushi.create({
+    //         name: req.body.name,
+    //         name_ja: req.body.name_ja
+    //     }).then(dbSushi => {
+    //         res.json(dbSushi)
+    //     });
+    // });
     app.post('/api/post', (req, res) => {
         console.log("api post");
         db.Post.create({
