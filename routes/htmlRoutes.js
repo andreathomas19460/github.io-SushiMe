@@ -1,7 +1,3 @@
-const db = require (`../models`);
-module.exports = app =>{
-    app.get ('/', function(req,res){
-
 const db = require(`../models`);
 const YAML = require('yaml');
 const fs = require('fs');
@@ -15,22 +11,24 @@ module.exports = app => {
             style: 'landingPage.css'
         })
     });
-    app.get ('/home', function(req,res){
+    app.get('/home', function (req, res) {
         res.render('home', {
             style: 'style.css'
         })
     });
 
-    app.get ('/sushiMe', function(req,res){
+    app.get('/sushiMe', function (req, res) {
         res.render('sushiMe', {
             style: 'sushiMe.css',
-            
+            sushiList: sushiList,
         })
     });
-     
-    app.get ('/map', function(req,res){
+
+    app.get('/map', function (req, res) {
         res.render('map', {
             style: 'map.css'
         })
     });
 }
+
+module.exports.sushiList = sushiList;
