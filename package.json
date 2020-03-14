@@ -31,6 +31,7 @@
     "node-aplay": "^1.0.3",
     "node-wav-player": "^0.1.0",
     "require": "^2.4.20",
-    "sequelize": "^5.21.5"
+    "sequelize": "^5.21.5",
+    "yaml": "^1.8.2"
   }
 }
