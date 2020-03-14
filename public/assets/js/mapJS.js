@@ -57,11 +57,11 @@ var map, infoWindow, infoWindowTwo;
           infoWindowTwo.setContent(place.name);
           infoWindowTwo.open(map, this);
           console.log(place);
-          $("#container").html("Restaurant: " + place.name);
+          $("#container").html("Store: " + place.name);
           $("#container2").html("Location: " +place.formatted_address);
-          if (place.opening_hours.open_now === true){$("#container3").html("This restaurant is open!")
+          if (place.opening_hours.open_now === true){$("#container3").html("This store is open!")
         } else {
-          $("#container3").html("Sorry, this restaurant is closed.")
+          $("#container3").html("Sorry, this store is closed.")
         };
           // $("#container4").text("Store: " + JSON.stringify(place));
         })
