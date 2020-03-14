@@ -1,7 +1,5 @@
 
-      // var mapElement = document.getElementById('map');
-      // mapElement.style = null;
-      var map, infoWindow, infoWindowTwo;
+    var map, infoWindow, infoWindowTwo;
       function initMap() {
         map = new google.maps.Map(document.getElementById("map"), {
           center: { lat: 27.9881, lng: 86.925 },
