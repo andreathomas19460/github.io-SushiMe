@@ -113,74 +113,18 @@
   <div class="center-div" id="sushiPlate" ondrop="drop(event)" ondragover="allowDrop(event)">
   </div>
 
-
-
-  <section class="container">
-    <div class="card" onclick="flip()">
-      <div class="front"><img id="drag1" src="./assets/images/sushi_db/blue mackerel.jpg" draggable="true"
-          ondragstart="drag(event)" width="180" height="120"></div>
-      <div class="back">
-       Blue mackerel<br>サバ
-        <audio id="myAudio" controls>
-          <source src="./assets/sound/salmon.mp3" type="audio/mpeg">
-        </audio></div>
-    </div>
-  </section>
-
-
-
-
-
-  <div id="images" class="container" onclick="flip()">
-
-    <img id="drag2" src="./assets/images/sushi_db/crab.jpg" draggable="true" ondragstart="drag(event)" width="180"
-      height="120">
-    <img id="drag3" src="./assets/images/sushi_db/fluke.jpg" draggable="true" ondragstart="drag(event)" width="180"
-      height="120">
-    <img id="drag4" src="./assets/images/sushi_db/flying fish roe.png" draggable="true" ondragstart="drag(event)"
-      width="180" height="120">
-    <img id="drag5" src="./assets/images/sushi_db/freshwater eel.jpg" draggable="true" ondragstart="drag(event)"
-      width="180" height="120">
-    <div>
-      <img id="drag6" src="./assets/images/sushi_db/octopus.jpg" draggable="true" ondragstart="drag(event)" width="180"
-        height="120">
-      <img id="drag7" src="./assets/images/sushi_db/oyster.jpg" draggable="true" ondragstart="drag(event)" width="180"
-        height="120">
-      <img id="drag8" src="./assets/images/sushi_db/puffer fish.jpg" draggable="true" ondragstart="drag(event)"
-        width="180" height="120">
-      <img id="drag9" src="./assets/images/sushi_db/red sea bream.jpg" draggable="true" ondragstart="drag(event)"
-        width="180" height="120">
-      <img id="drag10" src="./assets/images/sushi_db/salmon roe.jpg" draggable="true" ondragstart="drag(event)"
-        width="180" height="120">
-    </div>
-    <div>
-      <img id="drag11" src="./assets/images/sushi_db/Salmon.jpg" draggable="true" ondragstart="drag(event)" width="180"
-        height="120">
-      <img id="drag12" src="./assets/images/sushi_db/sardine.jpg" draggable="true" ondragstart="drag(event)" width="180"
-        height="120">
-      <img id="drag13" src="./assets/images/sushi_db/sea bass.jpg" draggable="true" ondragstart="drag(event)"
-        width="180" height="120">
-      <img id="drag14" src="./assets/images/sushi_db/sea urchin.jpg" draggable="true" ondragstart="drag(event)"
-        width="180" height="120">
-      <img id="drag15" src="./assets/images/sushi_db/shrimp.jpg" draggable="true" ondragstart="drag(event)" width="180"
-        height="120">
-    </div>
-    <div>
-      <img id="drag16" src="./assets/images/sushi_db/spanish mackerel.jpg" draggable="true" ondragstart="drag(event)"
-        width="180" height="120">
-      <img id="drag17" src="./assets/images/sushi_db/surf clam.jpg" draggable="true" ondragstart="drag(event)"
-        width="180" height="120">
-      <img id="drag18" src="./assets/images/sushi_db/tuna.jpg" draggable="true" ondragstart="drag(event)" width="180"
-        height="120">
-      <img id="drag19" src="./assets/images/sushi_db/yellowtail.jpg" draggable="true" ondragstart="drag(event)"
-        width="180" height="120">
-    </div>
-  </div>
-  </div>
-
-
-
-
-
+  {{#each sushiList}}
+    <section class="container">
+      <div class="card" onclick="flip(this.id);" id="flip{{@index}}">
+        <div class="front"><img id="drag{{@index}}" src="./assets/images/sushi_db/{{this.[0]}}.jpg" draggable="true"
+            ondragstart="drag(event)" width="180" height="120"></div>
+        <div class="back">
+        {{this.[1]}}<br>{{this.[2]}}
+          <audio id="myAudio" controls>
+            <source src="./assets/sound/{{this.[0]}}.mp3" type="audio/mpeg">
+          </audio></div>
+      </div>
+    </section>
+  {{/each}}
 
 </main>
