@@ -19,10 +19,10 @@ function drop(ev) {
   sushiPlate.push(JSON.stringify(sushi));
 
 }
-function clearCont() {
-  document.getElementById("sushiPlate").innerHTML = "";
-  sushiPlate = [];
-}
+// function clearCont() {
+//   document.getElementById("sushiPlate").innerHTML = "";
+//   sushiPlate = [];
+// }
 
 
 const saveButton = document.getElementById(`saveButton`);
@@ -44,6 +44,8 @@ saveButton.onclick(
   }
 
 )
+
+//card flip function
 
 function flip(id) {
   $("#"+id).toggleClass('flipped');

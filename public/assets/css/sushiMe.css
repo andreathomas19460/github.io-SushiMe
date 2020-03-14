@@ -278,6 +278,7 @@ body {
 
 
 .container {
+  display: inline-block;
   width: 250px;
   height: 150px;
   position: relative;
