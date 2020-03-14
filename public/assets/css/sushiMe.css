@@ -271,17 +271,6 @@ background-image: url("./assets/images/plate.jpg");
 border-radius: 3px;
 }
 
-    
-#images{
-  text-align: center;
-  margin:50px;
-}
-
-img{
-  margin:10px;
-  border: solid white 1px;
-}
-
 
 body {
   font-family: Arial, Helvetica, sans-serif;
@@ -310,14 +299,14 @@ body {
   -o-transform-style: preserve-3d;
   transform-style: preserve-3d;
   -webkit-transform-origin: 50% 50%;
+  margin:10px;
 }
 .card div {
-  display: block;
+  display: flex;
   height: 100%;
   width: 100%;
-  /* line-height: 200px; */
   color: black;
-  text-align: center;
+  align-items: center;
   font-size: 30px;
   position: absolute;
   -webkit-backface-visibility: hidden;
@@ -325,9 +314,7 @@ body {
   -o-backface-visibility: hidden;
   backface-visibility: hidden;
 }
-/* .card .front {
-background: red;
-} */
+
 .card .back {
   background: white;
   -webkit-transform: rotateY( 180deg );
