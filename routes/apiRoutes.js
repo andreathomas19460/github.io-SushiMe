@@ -7,30 +7,24 @@ module.exports = app => {
                 res.json(dbSushi);
             });
     });
-    // app.post('/api/sushi', (req, res) => {
-    //     db.Sushi.create({
-    //         name: req.body.name,
-    //         name_ja: req.body.name_ja
-    //     }).then(dbSushi => {
-    //         res.json(dbSushi)
-    //     });
-    // });
-    app.post('/api/post', (req, res) => {
-        console.log("api post");
-        db.Post.create({
-            user: req.body.user,
-            sushiArray: req.body.sushiArray+'',
+    app.post('/api/user', (req, res) => {
+        console.log("!!!!!!!!!!!")
+        console.log("req"+Object.getOwnPropertyNames(req.body))
+        db.User.create({
+            username: req.body.username,
+            email: req.body.email
         }).then(dbSushi => {
             res.json(dbSushi)
         });
     });
-    app.put('/api/sushi/:id', (req, res) => {
-        db.Sushi.destroy({
-            where: {
-                id: req.params.id
-            }
+    app.post('/api/post', (req, res) => {
+        console.log("we are in the post request")
+        db.Post.create({
+            user: "1",
+            sushiArray: JSON.stringify(req.body.sushiArray),
         }).then(dbSushi => {
-            res.json(dbSushi);
-        })
-    })
+            res.json(dbSushi)
+        });
+    
+    });
 }
