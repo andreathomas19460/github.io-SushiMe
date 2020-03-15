@@ -112,19 +112,24 @@
 
   <div class="center-div" id="sushiPlate" ondrop="drop(event)" ondragover="allowDrop(event)">
   </div>
+  <div>
+    <button id = "saveButton"> save</button>
+    <button id = "clearButton" onclick="clearCont()"> clear</button>
 
-  {{#each sushiList}}
-    <section class="container">
-      <div class="card" onclick="flip(this.id);" id="flip{{@index}}">
-        <div class="front"><img id="drag{{@index}}" src="./assets/images/sushi_db/{{this.name}}.jpg" draggable="true"
-            ondragstart="drag(event)" width="180" height="120"></div>
-        <div class="back">
-        {{this.en}}<br>{{this.ja}}
-          <audio id="myAudio" controls>
-            <source src="./assets/sound/{{this.name}}.mp3" type="audio/mpeg">
-          </audio></div>
-      </div>
-    </section>
-  {{/each}}
-
+  </div>
+    <div id= "sushiContainer">
+    {{#each sushiList}}
+      <section class="container" draggable="true" ondragstart="drag(event)" id="drag{{@index}}-{{this.name}}">
+        <div class="card" onclick="flip(this.id);" id="flip{{@index}}">
+          <div style="background-image: url(./assets/images/sushi_db/{{this.name}}.jpg); background-size: 100%;"  class="front"></div>
+          <div id ="tester" class="back">
+          {{this.en}}<br>{{this.ja}}
+            <audio id="myAudio" controls>
+              <source src="./assets/sound/{{this.name}}.mp3" type="audio/mpeg">
+            </audio></div>
+        </div>
+      </section>
+    {{/each}}
+    </div>
+    </div>
 </main>
