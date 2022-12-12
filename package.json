@@ -23,7 +23,7 @@
   "homepage": "https://github.com/andreathomas19460/github.io-SushiMe#readme",
   "dependencies": {
     "axios": "^0.19.2",
-    "express": "^4.17.1",
+    "express": "^4.17.3",
     "express-handlebars": "^3.1.0",
     "foundation-sites": "^6.6.1",
     "jest": "^25.1.0",
